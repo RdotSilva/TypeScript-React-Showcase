@@ -8,27 +8,31 @@ import {
   MenuButton,
   useColorModeValue,
   Stack,
+  Center,
+  Link,
 } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <Flex h={16} alignItems={"center"} justifyContent={"space-around"}>
           <Box>Ryan Silva</Box>
+
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
-              <Menu>
-                <MenuButton
-                  as={Button}
-                  rounded={"full"}
-                  variant={"link"}
-                  cursor={"pointer"}
-                  minW={0}
-                >
-                  ABOUT
-                </MenuButton>
-              </Menu>
+              <Link style={{ textDecoration: "none" }} href="#">
+                Home
+              </Link>
+              <Link style={{ textDecoration: "none" }} href="#">
+                About Me
+              </Link>
+              <Link style={{ textDecoration: "none" }} href="#">
+                Resume
+              </Link>
+              <Link style={{ textDecoration: "none" }} href="#">
+                Conact Me
+              </Link>
             </Stack>
           </Flex>
         </Flex>
