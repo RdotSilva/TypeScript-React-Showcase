@@ -8,10 +8,11 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import React from "react";
+import code from "../assets/code.jfif";
 
 const Home = () => {
   return (
-    <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
+    <Stack direction={{ base: "column", md: "row" }}>
       <Flex p={8} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
@@ -54,8 +55,8 @@ const Home = () => {
           </Stack>
         </Stack>
       </Flex>
-      <Flex flex={1}>
-        <Image alt={"Login Image"} objectFit={"cover"} src=} />
+      <Flex flex={0.5}>
+        <Image alt={"Login Image"} objectFit={"cover"} src={code} />
       </Flex>
     </Stack>
   );
