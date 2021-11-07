@@ -26,14 +26,14 @@ const Home = () => {
                 position: "absolute",
                 bottom: 1,
                 left: 0,
-                bg: "blue.400",
+                bg: "#7552f2",
                 zIndex: -1,
               }}
             >
               Hello, I'm Ryan
             </Text>
             <br />{" "}
-            <Text color={"blue.400"} as={"span"}>
+            <Text color={"#7552f2"} as={"span"}>
               a Software Engineer
             </Text>{" "}
           </Heading>
@@ -43,10 +43,10 @@ const Home = () => {
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
             <Button
               rounded={"full"}
-              bg={"blue.400"}
+              bg={"purple.500"}
               color={"white"}
               _hover={{
-                bg: "blue.500",
+                bg: "#7552f2",
               }}
             >
               Contact Me
