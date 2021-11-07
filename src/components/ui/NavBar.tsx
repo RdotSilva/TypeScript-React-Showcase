@@ -12,7 +12,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
@@ -41,4 +41,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
