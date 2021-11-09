@@ -1,4 +1,5 @@
 import React from "react";
+import Typical from "react-typical";
 
 const Profile = () => {
   return (
@@ -17,6 +18,31 @@ const Profile = () => {
                 <i className="fa fa-linkedin" />
               </a>
             </div>
+          </div>
+          <div className="profile-details-name">
+            <span className="primary-text">
+              {" "}
+              Hello, I'm <span className="highlighted-text">Ryan</span>
+            </span>
+          </div>
+          <div className="profile-details-role">
+            <span className="primary-text">
+              {" "}
+              <h1>
+                <Typical
+                  loop={Infinity}
+                  steps={[
+                    "Full Stack Developer",
+                    1000,
+                    "Continuous Leaner",
+                    1000,
+                  ]}
+                />
+              </h1>
+            </span>
+            <span className="profile-role-tagline">
+              Passion for learning new things and pushing myself
+            </span>
           </div>
         </div>
       </div>
