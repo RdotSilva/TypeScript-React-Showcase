@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import "./Profile.css";
 
 const Profile = () => {
   return (
@@ -44,6 +45,15 @@ const Profile = () => {
               Passion for learning new things and pushing myself
             </span>
           </div>
+          <div className="profile-options">
+            <button className="btn primary-btn"> Contact Me </button>
+            <a href="">
+              <button className="btn highlighted-btn">See my work</button>
+            </a>
+          </div>
+        </div>
+        <div className="profile-picture">
+          <div className="profile-picture-background"></div>
         </div>
       </div>
     </div>
