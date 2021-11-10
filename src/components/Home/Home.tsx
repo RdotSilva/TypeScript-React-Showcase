@@ -1,6 +1,7 @@
 import React from "react";
-import Profile from "./Profile/Profile";
-import ProfileFooter from "./Profile/ProfileFooter";
+import Profile from "../Profile/Profile";
+import ProfileFooter from "../Profile/ProfileFooter";
+import "./Home.css";
 
 const Home = () => {
   return (
