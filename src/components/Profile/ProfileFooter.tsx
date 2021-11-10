@@ -6,7 +6,7 @@ const ProfileFooter = () => {
     <div className="footer-container">
       <div className="footer-parent">
         <img
-          src={require("../../../assets/Home/shape-bg.png").default}
+          src={require("../../assets/images/shape-bg.png").default}
           alt="profile footer image"
         />
       </div>
