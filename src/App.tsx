@@ -1,8 +1,8 @@
 import * as React from "react";
-import Profile from "./components/Profile/Profile";
+import Home from "./components/Home";
 
 export const App = () => (
   <div className="App">
-    <Profile />
+    <Home />
   </div>
 );
