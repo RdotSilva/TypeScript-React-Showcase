@@ -1,8 +1,8 @@
 import * as React from "react";
-import Home from "./components/Home/Home";
+import ScreenWrapper from "./components/ui/ScreenWrapper";
 
 export const App = () => (
   <div className="App">
-    <Home />
+    <ScreenWrapper />
   </div>
 );
