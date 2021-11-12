@@ -18,6 +18,36 @@ const Header = () => {
   let currentScreenSubscription =
     ScrollService.currentScreenBroadcaster.subscribe(updateCurrentScreen);
 
+  const getHeaderOptions = () => {
+    return SCREENS.map((screen, i) => (
+      <div
+        key={screen.screenName}
+        className={getHeaderOptionsClasses(i)}
+        onClick={() => switchScreen(i, screen)}
+      >
+        <span>{screen.screenName}</span>
+      </div>
+    ));
+  };
+
+  const getHeaderOptionsClasses = (index) => {
+    let classes = "header-option ";
+    if (index < SCREENS.length - 1) classes += "header-option-separator";
+
+    if (selectedScreen === index) classes += "selected-header-option";
+
+    return classes;
+  };
+
+  const switchScreen = (index: any, screen: any) => {
+    let screenComponent = document.getElementById(screen.screenName);
+    if (!screenComponent) return;
+
+    screenComponent.scrollIntoView({ behavior: "smooth" });
+    setSelectedScreen(index);
+    setShowHeaderOptions(false);
+  };
+
   return <div>Header</div>;
 };
 
