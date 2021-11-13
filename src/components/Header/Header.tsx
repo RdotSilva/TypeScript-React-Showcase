@@ -49,6 +49,12 @@ const Header = () => {
     setShowHeaderOptions(false);
   };
 
+  useEffect(() => {
+    return () => {
+      currentScreenSubscription.unsubscribe();
+    };
+  }, [currentScreenSubscription]);
+
   return (
     <div
       className="header-container"
