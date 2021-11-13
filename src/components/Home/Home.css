@@ -3,5 +3,5 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 670px;
-  background-image: url("../../assets/images/bg-2.jpg");
+  background-image: url("../../assets/images/bg.jpg"); /* TODO: change background image */
 }
