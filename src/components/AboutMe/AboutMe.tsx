@@ -4,6 +4,13 @@ import ScrollService from "../../services/ScrollService";
 import Animations from "../../services/Animations";
 
 const AboutMe = ({ id }) => {
+  let fadeInScreenHandler = (screen) => {
+    if (screen.fadeInScreen !== id) return;
+    Animations.animations.fadeInScreen(id);
+  };
+  const fadeInSubscription =
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
   return (
     <div className="about-me-container screen-container fade-in" id={id || ""}>
       <div className="about-me-parent">
