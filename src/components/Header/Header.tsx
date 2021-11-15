@@ -19,6 +19,9 @@ const Header = () => {
   let currentScreenSubscription =
     ScrollService.currentScreenBroadcaster.subscribe(updateCurrentScreen);
 
+  /**
+   * Display nav bar options
+   */
   const getHeaderOptions = () => {
     return SCREENS.map((screen, i) => (
       <div
@@ -31,11 +34,18 @@ const Header = () => {
     ));
   };
 
-  const getHeaderOptionsClasses = (index) => {
+  /**
+   * Update the CSS classnames based on the number of items in the nav bar
+   */
+  const getHeaderOptionsClasses = (index: any) => {
     let classes = "header-option ";
-    if (index < SCREENS.length - 1) classes += "header-option-separator";
+    if (index < SCREENS.length - 1) {
+      classes += "header-option-separator ";
+    }
 
-    if (selectedScreen === index) classes += "selected-header-option";
+    if (selectedScreen === index) {
+      classes += "selected-header-option";
+    }
 
     return classes;
   };
