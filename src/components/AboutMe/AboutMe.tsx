@@ -31,6 +31,7 @@ const AboutMe = ({ id }) => {
   };
 
   return (
+    // TODO: Fix fade-in style, something is wrong and text is not centered
     <div className="about-me-container screen-container fade-in" id={id || ""}>
       <div className="about-me-parent">
         <SectionHeading title={"About Me"} subHeading={"Why Choose Me?"} />
