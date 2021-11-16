@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import ScrollService from "../../services/ScrollService";
 import Animations from "../../services/Animations";
+import "./AboutMe.css";
 
 const AboutMe = ({ id }) => {
   let fadeInScreenHandler = (screen) => {
@@ -17,7 +18,7 @@ const AboutMe = ({ id }) => {
       "Full Stack Software Engineer who enjoys being challenged and working on projects that bring me outside of my comfort zone. Always furthering self-improvement by learning new languages, technologies, and development techniques.",
     highlights: {
       bullets: ["Continuous learner", "Persistence", "Exploring new ideas"],
-      heading: "Here are a Few Highlights:",
+      heading: "My strengths are",
     },
   };
 
@@ -31,7 +32,6 @@ const AboutMe = ({ id }) => {
   };
 
   return (
-    // TODO: Fix fade-in style, something is wrong and text is not centered
     <div className="about-me-container screen-container fade-in" id={id || ""}>
       <div className="about-me-parent">
         <SectionHeading title={"About Me"} subHeading={"Why Choose Me?"} />
