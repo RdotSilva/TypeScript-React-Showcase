@@ -1,5 +1,6 @@
 import AboutMe from "../components/AboutMe/AboutMe";
 import Home from "../components/Home/Home";
+import Resume from "../components/Resume/Resume";
 
 export const SCREENS = [
   {
@@ -9,6 +10,10 @@ export const SCREENS = [
   {
     screenName: "AboutMe",
     component: AboutMe,
+  },
+  {
+    screenName: "Resume",
+    component: Resume,
   },
 ];
 
