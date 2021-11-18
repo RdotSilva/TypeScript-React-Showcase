@@ -178,6 +178,17 @@ const Resume = (props) => {
     ));
   };
 
+  const getResumeScreens = () => {
+    return (
+      <div
+        style={carousalOffsetStyle.style}
+        className="resume-details-carousal"
+      >
+        {resumeDetails.map((ResumeDetail) => ResumeDetail)}
+      </div>
+    );
+  };
+
   return (
     <div
       className="resume-container screen-container fade-in"
