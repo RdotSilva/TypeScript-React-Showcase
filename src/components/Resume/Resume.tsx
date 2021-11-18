@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Animations from "../../services/Animations";
 import ScrollService from "../../services/ScrollService";
 import SectionHeading from "../SectionHeading/SectionHeading";
+import "./Resume.css";
 
 const Resume = (props) => {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
@@ -147,6 +148,17 @@ const Resume = (props) => {
   };
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+  const handleCarousel = (index) => {
+    let offsetHeight = 360;
+
+    let newCarousalOffset = {
+      style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
+    };
+
+    setCarousalOffsetStyle(newCarousalOffset);
+    setSelectedBulletIndex(index);
+  };
 
   return (
     <div
