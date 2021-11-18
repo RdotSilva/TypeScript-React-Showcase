@@ -48,6 +48,23 @@ const Resume = (props) => {
     { skill: "CSS", ratingPercentage: 80 },
   ];
 
+  const projectsDetails = [
+    {
+      title: "Personal Portfolio Website",
+      duration: { fromDate: "2021", toDate: "2021" },
+      description:
+        "A Personal Portfolio website to showcase all my details and projects at one place.",
+      subHeading: "Skills: TypeScript, React, Bootstrap",
+    },
+    {
+      title: "Developer Social Network ",
+      duration: { fromDate: "2020", toDate: "2020" },
+      description: "Full stack social network for developers",
+      subHeading:
+        "Skills:  MERN Stack, React, Javascript, Express, MongoDB, NodeJS",
+    },
+  ];
+
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
 
