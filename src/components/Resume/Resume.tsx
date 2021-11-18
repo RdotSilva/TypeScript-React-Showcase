@@ -3,7 +3,6 @@ import Animations from "../../services/Animations";
 import ScrollService from "../../services/ScrollService";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import "./Resume.css";
-
 const Resume = (props) => {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
@@ -149,7 +148,7 @@ const Resume = (props) => {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-  const handleCarousel = (index) => {
+  const handleCarousal = (index) => {
     let offsetHeight = 360;
 
     let newCarousalOffset = {
@@ -158,6 +157,25 @@ const Resume = (props) => {
 
     setCarousalOffsetStyle(newCarousalOffset);
     setSelectedBulletIndex(index);
+  };
+
+  const getBullets = () => {
+    return resumeBullets.map((bullet, index) => (
+      <div
+        onClick={() => handleCarousal(index)}
+        className={
+          index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"
+        }
+        key={index}
+      >
+        <img
+          className="bullet-logo"
+          src={require(`../../assets/images/resume/${bullet.logoSrc}`).default}
+          alt="B"
+        />
+        <span className="bullet-label">{bullet.label}</span>
+      </div>
+    ));
   };
 
   return (
