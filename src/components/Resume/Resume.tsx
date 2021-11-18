@@ -65,6 +65,81 @@ const Resume = (props) => {
     },
   ];
 
+  const resumeDetails = [
+    <div className="resume-screen-container" key="education">
+      <ResumeHeading
+        heading={"CareerDevs Computer Science University"}
+        subHeading={"Graduate"}
+        fromDate={"2019"}
+        toDate={"2020"}
+      />
+    </div>,
+
+    /* WORK EXPERIENCE */
+    <div className="resume-screen-container" key="work-experience">
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Terminalfour"}
+          subHeading={"Full Stack Software Engineer"}
+          fromDate={"2021"}
+          toDate={"Present"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">Full stack developer</span>
+        </div>
+        <div className="experience-description">
+          <span className="resume-description-text">Edtech</span>
+          <br />
+        </div>
+      </div>
+    </div>,
+
+    /* PROGRAMMING SKILLS */
+    <div
+      className="resume-screen-container programming-skills-container"
+      key="programming-skills"
+    >
+      {skillDetails.map((skill, index) => (
+        <div className="skill-parent" key={index}>
+          <div className="heading-bullet"></div>
+          <span>{skill.skill}</span>
+          <div className="skill-percentage">
+            <div
+              style={{ width: skill.ratingPercentage + "%" }}
+              className="active-percentage-bar"
+            ></div>
+          </div>
+        </div>
+      ))}
+    </div>,
+
+    /* PROJECTS */
+    <div className="resume-screen-container" key="projects">
+      {projectsDetails.map((projectsDetails, index) => (
+        <ResumeHeading
+          key={index}
+          heading={projectsDetails.title}
+          subHeading={projectsDetails.subHeading}
+          description={projectsDetails.description}
+          fromDate={projectsDetails.duration.fromDate}
+          toDate={projectsDetails.duration.toDate}
+        />
+      ))}
+    </div>,
+
+    /* Interests */
+    <div className="resume-screen-container" key="interests">
+      <ResumeHeading
+        heading="Learning"
+        description="I love to love new things"
+      />
+      <ResumeHeading
+        heading="Experimenting"
+        description="I love to experiment with new tools and technologies"
+      />
+    </div>,
+  ];
+
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
 
