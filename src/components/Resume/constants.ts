@@ -1,7 +1,7 @@
 /**
  * Bullets to render in Resume section
  */
-export const resumeBullets = [
+export const resumeBullets: { label: string; logoSrc: string }[] = [
   { label: "Education", logoSrc: "education.svg" },
   { label: "Work History", logoSrc: "work-history.svg" },
   { label: "Programming Skills", logoSrc: "programming-skills.svg" },
@@ -12,7 +12,7 @@ export const resumeBullets = [
 /**
  * Skill list  to render in Resume section
  */
-export const skillDetails = [
+export const skillDetails: { skill: string; ratingPercentage: number }[] = [
   { skill: "JavaScript", ratingPercentage: 82 },
   { skill: "React JS", ratingPercentage: 82 },
   { skill: "Node JS", ratingPercentage: 80 },
@@ -23,7 +23,12 @@ export const skillDetails = [
 /**
  * Project details  to render in Resume section
  */
-export const projectsDetails = [
+export const projectsDetails: {
+  title: string;
+  duration: { fromDate: string; toDate: string };
+  description: string;
+  subHeading: string;
+}[] = [
   {
     title: "Personal Portfolio Website",
     duration: { fromDate: "2021", toDate: "2021" },
