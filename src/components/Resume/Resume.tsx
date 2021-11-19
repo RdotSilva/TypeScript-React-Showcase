@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Animations from "../../services/Animations";
 import ScrollService from "../../services/ScrollService";
 import SectionHeading from "../SectionHeading/SectionHeading";
+import { resumeBullets, skillDetails, projectsDetails } from "./constants";
 import "./Resume.css";
+
 const Resume = (props) => {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
@@ -32,39 +34,6 @@ const Resume = (props) => {
     );
   };
 
-  const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
-    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
-    { label: "Interests", logoSrc: "interests.svg" },
-  ];
-
-  const skillDetails = [
-    { skill: "JavaScript", ratingPercentage: 82 },
-    { skill: "React JS", ratingPercentage: 82 },
-    { skill: "Node JS", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
-  ];
-
-  const projectsDetails = [
-    {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2021", toDate: "2021" },
-      description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Skills: TypeScript, React, Bootstrap",
-    },
-    {
-      title: "Developer Social Network ",
-      duration: { fromDate: "2020", toDate: "2020" },
-      description: "Full stack social network for developers",
-      subHeading:
-        "Skills:  MERN Stack, React, Javascript, Express, MongoDB, NodeJS",
-    },
-  ];
-
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
@@ -79,7 +48,7 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Terminalfour"}
+          heading={"T4"}
           subHeading={"Full Stack Software Engineer"}
           fromDate={"2021"}
           toDate={"Present"}
@@ -131,7 +100,7 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
         heading="Learning"
-        description="I love to love new things"
+        description="I love to learn new things"
       />
       <ResumeHeading
         heading="Experimenting"
