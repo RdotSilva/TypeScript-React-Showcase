@@ -4,7 +4,11 @@ import ScrollService from "../../services/ScrollService";
 import Animations from "../../services/Animations";
 import "./AboutMe.css";
 
-const AboutMe = ({ id }) => {
+type AboutMeProps = {
+  id: string;
+};
+
+const AboutMe = ({ id }: AboutMeProps) => {
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== id) return;
     Animations.animations.fadeInScreen(id);
