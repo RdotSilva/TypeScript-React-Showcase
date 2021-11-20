@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+import { ReactTypical } from "@deadcoder0904/react-typical";
 import "./Profile.css";
 
 const Profile = () => {
@@ -30,7 +30,7 @@ const Profile = () => {
             <span className="primary-text">
               {" "}
               <h1>
-                <Typical
+                <ReactTypical
                   loop={Infinity}
                   steps={[
                     "Full Stack Developer",
