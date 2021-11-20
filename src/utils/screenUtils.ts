@@ -8,12 +8,16 @@ export const SCREENS = [
     component: Home,
   },
   {
-    screenName: "AboutMe",
+    screenName: "About Me",
     component: AboutMe,
   },
   {
     screenName: "Resume",
     component: Resume,
+  },
+  {
+    screenName: "Projects",
+    component: Resume, // TODO replace with projects component
   },
 ];
 
