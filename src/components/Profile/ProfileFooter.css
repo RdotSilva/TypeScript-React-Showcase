@@ -14,6 +14,29 @@
   max-width: 100%;
   height: 130px;
 }
+.footer-wrapper {
+  position: relative;
+  background-color: #24263b;
+}
+.wave-graphic {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.wave-graphic svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 117px;
+  transform: rotateY(180deg);
+}
+.wave-graphic .shape-fill {
+  fill: #ffffff;
+}
 /*IPAD PRO RESPONSIVENESS*/
 @media only screen and (max-width: 1110px) {
   .footer-parent {
