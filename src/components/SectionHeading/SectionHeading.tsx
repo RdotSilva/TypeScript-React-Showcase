@@ -1,7 +1,12 @@
 import React from "react";
 import "./SectionHeading.css";
 
-const SectionHeading = (props: any) => {
+type SectionHeadingProps = {
+  title: string;
+  subHeading: string;
+};
+
+const SectionHeading = (props: SectionHeadingProps) => {
   return (
     <div className="heading-container">
       <div className="screen-heading">
