@@ -38,7 +38,7 @@ const AboutMe = ({ id }: AboutMeProps) => {
   return (
     <div className="about-me-container screen-container fade-in" id={id || ""}>
       <div className="about-me-parent">
-        <SectionHeading title={"About Me"} subHeading={"Why Choose Me?"} />
+        <SectionHeading title={"About Me"} subHeading={"Get to know me"} />
         <div className="about-me-card">
           <div className="about-me-profile"></div>
           <div className="about-me-details">

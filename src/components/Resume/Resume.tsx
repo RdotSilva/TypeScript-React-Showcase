@@ -164,7 +164,10 @@ const Resume = (props) => {
       id={props.id || ""}
     >
       <div className="resume-content">
-        <SectionHeading title={"Resume"} subHeading={"My formal Bio Details"} />
+        <SectionHeading
+          title={"Resume"}
+          subHeading={"Check out my background"}
+        />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">
