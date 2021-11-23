@@ -44,14 +44,30 @@ const Projects = (props) => {
           <div className="row">
             <OwlCarousel
               className="owl-carousel"
-              id="testimonial-carousel"
+              id="project-carousel"
               {...owlCarouselOptions}
             >
+              <div className="col-lg-12">
+                <div className="project-item">
+                  <div className="project-comment">
+                    <p>
+                      <i className="fa fa-quote-left" />
+                      This was the first project I worked on
+                      <i className="fa fa-quote-right" />
+                    </p>
+                  </div>
+                  <div className="project-info">
+                    {/* TODO: Add project image <img src={} alt="no internet connection"></img> */}
+                    <h5>Developer Social Network</h5>
+                    <p>React, JavaScript, NodeJS, MongoDB, ExpressJS</p>
+                  </div>
+                </div>
+              </div>
               <div>Carousel Child Placeholder</div>
             </OwlCarousel>
             <div className="col-lg-12">
-              <div className="testi-item">
-                <div className="testi-comment"></div>
+              <div className="project-item">
+                <div className="project-comment"></div>
               </div>
             </div>
           </div>
