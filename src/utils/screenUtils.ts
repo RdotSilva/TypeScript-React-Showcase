@@ -1,5 +1,6 @@
 import AboutMe from "../components/AboutMe/AboutMe";
 import Home from "../components/Home/Home";
+import Projects from "../components/Projects/Projects";
 import Resume from "../components/Resume/Resume";
 
 export const SCREENS = [
@@ -17,7 +18,7 @@ export const SCREENS = [
   },
   {
     screenName: "Projects",
-    component: Resume, // TODO replace with projects component
+    component: Projects, 
   },
 ];
 
