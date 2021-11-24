@@ -32,8 +32,16 @@ const owlCarouselOptions = {
   },
 };
 
-const renderProjectCards = (projects) => {
-  return projects.map((project) => {
+const projects = [
+  {
+    title: "Developer Social Network",
+    description: "This was the first React project I worked on",
+    skills: "React, JavaScript, MongoDB, ExpressJS, NodeJS",
+  },
+];
+
+const renderProjectCards = (projectList: []) => {
+  return projectList.map((project) => {
     <div className="col-lg-12">
       <div className="project-item">
         <div className="project-comment">
@@ -72,7 +80,7 @@ const Projects = (props: ProjectsProps) => {
               id="project-carousel"
               {...owlCarouselOptions}
             >
-              {renderProjectCards()}
+              {renderProjectCards(projects)}
             </OwlCarousel>
             <div className="col-lg-12">
               <div className="project-item">
