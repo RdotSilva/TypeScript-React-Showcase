@@ -32,6 +32,27 @@ const owlCarouselOptions = {
   },
 };
 
+const renderProjectCards = (projects) => {
+  return projects.map((project) => {
+    <div className="col-lg-12">
+      <div className="project-item">
+        <div className="project-comment">
+          <p>
+            <i className="fa fa-quote-left" />
+            {project.description}
+            <i className="fa fa-quote-right" />
+          </p>
+        </div>
+        <div className="project-info">
+          {/* TODO: Add project image <img src={} alt="no internet connection"></img> */}
+          <h5>{project.title}</h5>
+          <p>{project.skills}</p>
+        </div>
+      </div>
+    </div>;
+  });
+};
+
 type ProjectsProps = {
   id: string;
 };
@@ -51,23 +72,7 @@ const Projects = (props: ProjectsProps) => {
               id="project-carousel"
               {...owlCarouselOptions}
             >
-              <div className="col-lg-12">
-                <div className="project-item">
-                  <div className="project-comment">
-                    <p>
-                      <i className="fa fa-quote-left" />
-                      This was the first project I worked on
-                      <i className="fa fa-quote-right" />
-                    </p>
-                  </div>
-                  <div className="project-info">
-                    {/* TODO: Add project image <img src={} alt="no internet connection"></img> */}
-                    <h5>Developer Social Network</h5>
-                    <p>React, JavaScript, NodeJS, MongoDB, ExpressJS</p>
-                  </div>
-                </div>
-              </div>
-              <div>Carousel Child Placeholder</div>
+              {renderProjectCards()}
             </OwlCarousel>
             <div className="col-lg-12">
               <div className="project-item">
