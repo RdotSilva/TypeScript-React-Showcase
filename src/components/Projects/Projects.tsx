@@ -32,7 +32,11 @@ const owlCarouselOptions = {
   },
 };
 
-const Projects = (props) => {
+type ProjectsProps = {
+  id: string;
+};
+
+const Projects = (props: ProjectsProps) => {
   return (
     <div>
       <SectionHeading
