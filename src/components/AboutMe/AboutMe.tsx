@@ -16,8 +16,13 @@ const AboutMe = ({ id }: AboutMeProps) => {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
+  type ProfileData = {
+    description: string;
+    highlights: { bullets: [string]; heading: string };
+  };
+
   // Profile data that I will render in the AboutMe section
-  const profileData = {
+  const profileData: ProfileData = {
     description:
       "Full Stack Software Engineer who enjoys being challenged and working on projects that bring me outside of my comfort zone. Always furthering self-improvement by learning new languages, technologies, and development techniques.",
     highlights: {
