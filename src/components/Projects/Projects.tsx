@@ -6,7 +6,7 @@ import "./Projects.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import { projects, ProjectType } from "./constants";
+import { Project, projects } from "./constants";
 
 /**
  * Options to control the behaviour of the Owl Carousel
@@ -33,7 +33,7 @@ const owlCarouselOptions = {
   },
 };
 
-const renderProjectCards = (projectList: [ProjectType]) => {
+const renderProjectCards = (projectList: [Project]) => {
   return projectList.map((project) => {
     <div className="col-lg-12">
       <div className="project-item">
