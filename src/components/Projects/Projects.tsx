@@ -33,6 +33,7 @@ const owlCarouselOptions = {
   },
 };
 
+// TODO: Look into this not rendering out projects correctly
 const renderProjectCards = (projectList: [Project]) => {
   return projectList.map((project) => {
     <div className="col-lg-12">
