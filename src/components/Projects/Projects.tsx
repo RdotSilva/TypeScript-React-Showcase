@@ -75,11 +75,6 @@ const Projects = (props: ProjectsProps) => {
             >
               {renderProjectCards(projects)}
             </OwlCarousel>
-            <div className="col-lg-12">
-              <div className="project-item">
-                <div className="project-comment"></div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
