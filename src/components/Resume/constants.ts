@@ -16,6 +16,7 @@ export const skillDetails: { skill: string; ratingPercentage: number }[] = [
   { skill: "JavaScript", ratingPercentage: 82 },
   { skill: "React JS", ratingPercentage: 82 },
   { skill: "Node JS", ratingPercentage: 80 },
+  { skill: "GraphQL", ratingPercentage: 70 },
   { skill: "HTML", ratingPercentage: 80 },
   { skill: "CSS", ratingPercentage: 80 },
 ];
