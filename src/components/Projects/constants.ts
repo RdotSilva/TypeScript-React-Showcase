@@ -10,4 +10,9 @@ export const projects: [Project] = [
     description: "This was the first React project I worked on",
     skills: "React, JavaScript, MongoDB, ExpressJS, NodeJS",
   },
+  {
+    title: "REST API",
+    description: "Awesome REST API",
+    skills: "NodeJS, JavaScript",
+  },
 ];
