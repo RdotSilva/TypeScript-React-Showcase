@@ -39,13 +39,14 @@ type ProjectsProps = {
 };
 
 const Projects = (props: ProjectsProps) => {
-  let fadeInScreenHandler = (screen) => {
-    if (screen.fadeInScreen !== props.id) return;
-    Animations.animations.fadeInScreen(props.id);
-  };
+  // TODO: Re-enable this logic after bug investigation (id undefined)
+  // let fadeInScreenHandler = (screen) => {
+  //   if (screen.fadeInScreen !== props.id) return;
+  //   Animations.animations.fadeInScreen(props.id);
+  // };
 
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  // const fadeInSubscription =
+  //   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   return (
     <div>
