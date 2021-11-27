@@ -54,7 +54,7 @@ const Projects = (props: ProjectsProps) => {
         title={"My projects"}
         subHeading={"Check out what I've been working on"}
       />
-      <section className="projects-section fade-in" id={props.id || ""}>
+      <section className="projects-section" id={props.id || ""}>
         <div className="container">
           <div className="row">
             <OwlCarousel

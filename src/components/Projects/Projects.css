@@ -1,12 +1,12 @@
 .projects-section {
   padding: 80px 0 80px;
-  background-image: url("../../../src/assets/images/bg-2.jpg");
+  /* background-image: url("../../../src/assets/images/bg-2.jpg"); */
   background-position: center;
   background-attachment: fixed;
   position: relative;
   z-index: -1;
 }
-.project-section::before {
+.projects-section::before {
   content: "";
   position: absolute;
   left: 0;
