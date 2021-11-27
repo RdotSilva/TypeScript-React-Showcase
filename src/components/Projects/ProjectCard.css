@@ -1,0 +1,59 @@
+.project-item {
+  background-color: white;
+  padding: 30px;
+  border-radius: 50px 50px 50px 0px;
+}
+.project-item p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  font-style: italic;
+}
+.project-item p .fa-quote-left {
+  margin-right: 5px;
+  color: tomato;
+}
+.project-item p .fa-quote-right {
+  margin-left: 5px;
+  color: tomato;
+}
+.project-comment .stars {
+  margin: 0 0 20px;
+}
+.project-comment .stars li {
+  display: inline-block;
+  margin: 0 1px;
+}
+.project-comment .stars li i {
+  font-size: 13px;
+  color: tomato;
+}
+.project-info {
+  position: relative;
+  padding-left: 80px;
+  padding-top: 5px;
+  min-height: 60px;
+}
+.project-info img {
+  height: 70px;
+  width: 70px;
+  border: 2px solid transparent;
+  border-color: black;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  position: absolute;
+}
+.project-info h5 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0 0 2px;
+}
+.project-info p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+}
