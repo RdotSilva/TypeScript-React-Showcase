@@ -15,4 +15,9 @@ export const projects: [Project] = [
     description: "Awesome REST API",
     skills: "NodeJS, JavaScript",
   },
+  {
+    title: "Cool Mobile App",
+    description: "Awesome mobile app",
+    skills: "React Native",
+  },
 ];
