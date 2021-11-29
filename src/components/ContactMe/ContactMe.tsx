@@ -10,6 +10,8 @@ const ContactMe = (props) => {
   const [banner, setBanner] = useState("");
   const [bool, setBool] = useState(false);
 
+  // TODO: Add change handlers for form inputs
+
   return (
     <div className="main-container fade-in" id={props.id || ""}>
       <SectionHeading subHeading={"Want to connect?"} title={"Contact Me"} />
