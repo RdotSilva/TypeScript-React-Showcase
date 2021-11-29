@@ -1,9 +1,15 @@
 import { ReactTypical } from "@deadcoder0904/react-typical";
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import "./ContactMe.css";
 
 const ContactMe = (props) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [banner, setBanner] = useState("");
+  const [bool, setBool] = useState(false);
+
   return (
     <div className="main-container fade-in" id={props.id || ""}>
       <SectionHeading subHeading={"Want to connect?"} title={"Contact Me"} />
