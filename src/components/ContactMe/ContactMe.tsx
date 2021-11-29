@@ -1,6 +1,7 @@
 import { ReactTypical } from "@deadcoder0904/react-typical";
 import React from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
+import "./ContactMe.css";
 
 const ContactMe = (props) => {
   return (
@@ -27,6 +28,17 @@ const ContactMe = (props) => {
             // TODO: Add image
             {/* <img src={} alt="image not found" /> */}
           </div>
+          <form onSubmit={submitForm}>
+            <p>{banner}</p>
+            <label htmlFor="name">Name</label>
+            <input type="text" onChange={handleName} value={name} />
+
+            <label htmlFor="email">Email</label>
+            <input type="email" onChange={handleEmail} value={email} />
+
+            <label htmlFor="message">Message</label>
+            <textarea type="text" onChange={handleMessage} value={message} />
+          </form>
         </div>
       </div>
     </div>
