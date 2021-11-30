@@ -22,6 +22,10 @@ const ContactMe = (props) => {
     setMessage(e.target.value);
   };
 
+  const submitForm = () => {
+    // TODO: Submit form data
+  };
+
   return (
     <div className="main-container fade-in" id={props.id || ""}>
       <SectionHeading subHeading={"Want to connect?"} title={"Contact Me"} />
