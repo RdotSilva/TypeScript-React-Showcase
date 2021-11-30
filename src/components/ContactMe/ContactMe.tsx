@@ -12,6 +12,10 @@ const ContactMe = (props) => {
 
   // TODO: Add change handlers for form inputs
 
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
   return (
     <div className="main-container fade-in" id={props.id || ""}>
       <SectionHeading subHeading={"Want to connect?"} title={"Contact Me"} />
@@ -39,7 +43,7 @@ const ContactMe = (props) => {
           <form onSubmit={submitForm}>
             <p>{banner}</p>
             <label htmlFor="name">Name</label>
-            <input type="text" onChange={handleName} value={name} />
+            <input type="text" onChange={handleNameChange} value={name} />
 
             <label htmlFor="email">Email</label>
             <input type="email" onChange={handleEmail} value={email} />
