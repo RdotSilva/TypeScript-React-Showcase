@@ -10,14 +10,16 @@ const ContactMe = (props) => {
   const [banner, setBanner] = useState("");
   const [bool, setBool] = useState(false);
 
-  // TODO: Add change handlers for form inputs
-
   const handleNameChange = (e) => {
     setName(e.target.value);
   };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
+  };
+
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
   };
 
   return (
@@ -53,7 +55,11 @@ const ContactMe = (props) => {
             <input type="email" onChange={handleEmailChange} value={email} />
 
             <label htmlFor="message">Message</label>
-            <textarea type="text" onChange={handleMessage} value={message} />
+            <textarea
+              type="text"
+              onChange={handleMessageChange}
+              value={message}
+            />
           </form>
         </div>
       </div>
