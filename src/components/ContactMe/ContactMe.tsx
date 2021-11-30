@@ -16,6 +16,10 @@ const ContactMe = (props) => {
     setName(e.target.value);
   };
 
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
     <div className="main-container fade-in" id={props.id || ""}>
       <SectionHeading subHeading={"Want to connect?"} title={"Contact Me"} />
@@ -46,7 +50,7 @@ const ContactMe = (props) => {
             <input type="text" onChange={handleNameChange} value={name} />
 
             <label htmlFor="email">Email</label>
-            <input type="email" onChange={handleEmail} value={email} />
+            <input type="email" onChange={handleEmailChange} value={email} />
 
             <label htmlFor="message">Message</label>
             <textarea type="text" onChange={handleMessage} value={message} />
