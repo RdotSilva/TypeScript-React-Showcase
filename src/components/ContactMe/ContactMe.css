@@ -135,19 +135,6 @@ button .load img {
   transform: scale(1.5);
 }
 
-.contact-me-button {
-  margin-top: 10px;
-  padding: 5px;
-  outline: none;
-  color: rgb(230, 227, 227);
-  border: 2px solid #ff5823;
-  font-size: 12px;
-  border-radius: 19px;
-  background-color: #1f2235;
-  align-items: center;
-  justify-content: center;
-}
-
 @media screen and (min-width: 940px) {
   .back-form {
     max-width: 1100px;
