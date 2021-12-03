@@ -2,6 +2,14 @@ import React from "react";
 import { Box, Image, Badge, StarIcon } from "@chakra-ui/react";
 
 const Project = ({ description, title, skills }) => {
+  // TODO: Expand this and move to constants file
+  const project = {
+    imageUrl: "https://bit.ly/2Z4KKcF",
+    imageAlt: "App image alt laceholder",
+    title: "Developer Social Network",
+    description: "React App",
+  };
+
   return (
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
       <Image src={project.imageUrl} alt={project.imageAlt} />
