@@ -1,7 +1,13 @@
 import React from "react";
-import { Box, Image, Badge, StarIcon } from "@chakra-ui/react";
+import { Box, Image, Badge } from "@chakra-ui/react";
 
-const Project = ({ description, title, skills }) => {
+type ProjectProps = {
+  description: string;
+  title: string;
+  skills: string;
+};
+
+const Project = ({ description, title, skills }: ProjectProps) => {
   // TODO: Expand this and move to constants file
   const project = {
     imageUrl: "https://bit.ly/2Z4KKcF",
