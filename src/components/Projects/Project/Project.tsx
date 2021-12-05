@@ -11,8 +11,9 @@ type ProjectProps = {
 const Project = ({ description, title, skills }: ProjectProps) => {
   // TODO: Expand this and move to constants file
   const project = {
-    imageUrl: "https://bit.ly/2Z4KKcF",
-    imageAlt: "App image alt laceholder",
+    imageUrl:
+      "https://i.picsum.photos/id/1/5616/3744.jpg?hmac=kKHwwU8s46oNettHKwJ24qOlIAsWN9d2TtsXDoCWWsQ",
+    imageAlt: "App image alt placeholder",
     title: "Developer Social Network",
     description: "React App",
   };
