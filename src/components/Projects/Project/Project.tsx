@@ -16,6 +16,7 @@ const Project = ({ description, title, skills }: ProjectProps) => {
     imageAlt: "App image alt placeholder",
     title: "Developer Social Network",
     description: "React App",
+    skills: "React, JavaScript",
   };
 
   return (
@@ -26,7 +27,7 @@ const Project = ({ description, title, skills }: ProjectProps) => {
         <Box p="6">
           <Box display="flex" alignItems="baseline">
             <Badge borderRadius="full" px="2" colorScheme="teal">
-              React
+              TECH:
             </Badge>
             <Box
               color="gray.500"
@@ -36,7 +37,7 @@ const Project = ({ description, title, skills }: ProjectProps) => {
               textTransform="uppercase"
               ml="2"
             >
-              Full stack &bull; Web app
+              {project.skills}
             </Box>
           </Box>
 
