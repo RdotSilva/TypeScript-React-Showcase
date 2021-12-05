@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Image, Badge } from "@chakra-ui/react";
+import "./Project.css";
 
 type ProjectProps = {
   description: string;
@@ -17,42 +18,44 @@ const Project = ({ description, title, skills }: ProjectProps) => {
   };
 
   return (
-    <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-      <Image src={project.imageUrl} alt={project.imageAlt} />
+    <div className="col-lg-12">
+      <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
+        <Image src={project.imageUrl} alt={project.imageAlt} />
 
-      <Box p="6">
-        <Box display="flex" alignItems="baseline">
-          <Badge borderRadius="full" px="2" colorScheme="teal">
-            React
-          </Badge>
+        <Box p="6">
+          <Box display="flex" alignItems="baseline">
+            <Badge borderRadius="full" px="2" colorScheme="teal">
+              React
+            </Badge>
+            <Box
+              color="gray.500"
+              fontWeight="semibold"
+              letterSpacing="wide"
+              fontSize="xs"
+              textTransform="uppercase"
+              ml="2"
+            >
+              Full stack &bull; Web app
+            </Box>
+          </Box>
+
           <Box
-            color="gray.500"
+            mt="1"
             fontWeight="semibold"
-            letterSpacing="wide"
-            fontSize="xs"
-            textTransform="uppercase"
-            ml="2"
+            as="h4"
+            lineHeight="tight"
+            isTruncated
           >
-            Full stack &bull; Web app
+            {project.title}
+          </Box>
+
+          <Box>
+            {project.description}
+            <Box as="span" color="gray.600" fontSize="sm"></Box>
           </Box>
         </Box>
-
-        <Box
-          mt="1"
-          fontWeight="semibold"
-          as="h4"
-          lineHeight="tight"
-          isTruncated
-        >
-          {project.title}
-        </Box>
-
-        <Box>
-          {project.description}
-          <Box as="span" color="gray.600" fontSize="sm"></Box>
-        </Box>
       </Box>
-    </Box>
+    </div>
   );
 };
 
