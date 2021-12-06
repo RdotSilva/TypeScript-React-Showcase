@@ -17,15 +17,6 @@ const Project = ({
   title,
   skills,
 }: ProjectProps) => {
-  // TODO: Expand this and move to constants file
-  const project = {
-    imageUrl:
-      "https://i.picsum.photos/id/1/5616/3744.jpg?hmac=kKHwwU8s46oNettHKwJ24qOlIAsWN9d2TtsXDoCWWsQ",
-    imageAlt: "App image alt placeholder",
-    title: "Developer Social Network",
-    description: "React App",
-    skills: "React, JavaScript",
-  };
   return (
     <div className="col-lg-12">
       <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
