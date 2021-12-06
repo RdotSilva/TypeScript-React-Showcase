@@ -18,7 +18,7 @@ const AboutMe = ({ id }: AboutMeProps) => {
 
   type ProfileData = {
     description: string;
-    highlights: { bullets: [string]; heading: string };
+    highlights: { bullets: string[]; heading: string };
   };
 
   // Profile data that I will render in the AboutMe section
