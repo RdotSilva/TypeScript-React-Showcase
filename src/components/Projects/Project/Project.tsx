@@ -6,9 +6,17 @@ type ProjectProps = {
   description: string;
   title: string;
   skills: string;
+  imageUrl: string;
+  imageAlt: string;
 };
 
-const Project = ({ description, title, skills }: ProjectProps) => {
+const Project = ({
+  imageUrl,
+  imageAlt,
+  description,
+  title,
+  skills,
+}: ProjectProps) => {
   // TODO: Expand this and move to constants file
   const project = {
     imageUrl:
@@ -18,11 +26,10 @@ const Project = ({ description, title, skills }: ProjectProps) => {
     description: "React App",
     skills: "React, JavaScript",
   };
-
   return (
     <div className="col-lg-12">
       <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-        <Image src={project.imageUrl} alt={project.imageAlt} />
+        <Image src={imageUrl} alt={imageAlt} />
 
         <Box p="6">
           <Box display="flex" alignItems="baseline">
@@ -37,7 +44,7 @@ const Project = ({ description, title, skills }: ProjectProps) => {
               textTransform="uppercase"
               ml="2"
             >
-              {project.skills}
+              {skills}
             </Box>
           </Box>
 
@@ -48,11 +55,11 @@ const Project = ({ description, title, skills }: ProjectProps) => {
             lineHeight="tight"
             isTruncated
           >
-            {project.title}
+            {title}
           </Box>
 
           <Box>
-            {project.description}
+            {description}
             <Box as="span" color="gray.600" fontSize="sm"></Box>
           </Box>
         </Box>
